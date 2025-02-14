@@ -1,0 +1,42 @@
+Request method:	DELETE
+Request URI:	https://api.reverb.com/api/listings/87219987
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept-Version=3.0
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 14 Feb 2025 10:42:49 GMT
+Content-Type: application/hal+json
+Content-Length: 27
+Connection: keep-alive
+vary: Accept-Language,Accept-Version,X-Display-Currency,X-Shipping-Region,X-Item-Region,X-Bump-Tracking-Key,X-Postal-Code
+x-reverb-version: 3.0
+x-rails-version: 7.2.2.1
+etag: W/"066f8650ee56d3c627ef448e09303816"
+Cache-Control: max-age=0, private, must-revalidate
+x-request-id: 911c74228975936b
+x-runtime: 0.136150
+strict-transport-security: max-age=631138519
+content-security-policy: default-src * 'unsafe-inline' 'unsafe-eval' data: blob:; frame-ancestors 'self' admin.reverb.tools
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+x-xss-protection: 1; mode=block
+access-control-allow-headers: Authorization,Content-Type,Accept,Origin,User-Agent,Cache-Control,Keep-Alive,X-Requested-With,If-Modified-Since,X-Auth-Token,X-Reverb-App,X-Reverb-Embed-Location,X-Reverb-User-Info,X-Reverb-Device-Info,X-Display-Currency,X-Shipping-Region,X-CSRF-Token,Accept-Version,X-Context-Id,X-Item-Region,X-Session-Id,x-datadog-origin,x-datadog-parent-id,x-datadog-sampled,x-datadog-sampling-priority,x-datadog-trace-id,X-Postal-Code,X-Google-Recaptcha-Token,X-Secondary-User-Enabled
+access-control-allow-methods: GET,PUT,POST,PATCH,DELETE,HEAD,OPTIONS
+access-control-allow-origin: *
+cf-cache-status: DYNAMIC
+Set-Cookie: __cf_bm=tGTgd_Yhx2S6EBL6ps.D4V5bhZ100BULBCfv8l6lStE-1739529769-1.0.1.1-o3YFz2MZ7MdT6L_qchyCeBZJ4M5zebdw78MwmhPyQfuGsc0c_mjxLmBLni53gENyeeEgFe1X3ssY8Puh7eH3Tg; path=/; expires=Fri, 14-Feb-25 11:12:49 GMT; domain=.reverb.com; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 911c74228975936b-MAA
+
+{
+    "message": "Draft deleted"
+}

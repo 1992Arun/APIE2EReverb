@@ -1,0 +1,154 @@
+package org.step;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.junit.Assert;
+import org.utility.APIEndPoints;
+import org.utility.Builder;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class StepDefinition extends Builder{
+
+	public static RequestSpecification spec;
+
+	public static Response response;
+
+	public static int id;
+
+
+	@Given("I added baseuri and RequestSpec")
+	public void i_added_baseuri_and_RequestSpec() {
+
+		spec = RestAssured.given().spec(getRequestSpecBuilder());
+
+	}
+
+	@When("I send the {string} request with {string} endpoint")
+	public void i_send_the_request_with_endpoint(String string, String string2) {
+
+		APIEndPoints valueOf = APIEndPoints.valueOf(string2);
+
+		String endpoint = valueOf.getResource();
+
+		if(string.equalsIgnoreCase("GET")) {
+
+			response = spec.when().get(endpoint);
+
+		} else if(string.equalsIgnoreCase("POST")) {
+
+			response = spec.when().post(endpoint);
+			
+		}else if(string.equalsIgnoreCase("PUT")) {
+
+			response = spec.when().put(endpoint+id);
+			
+			
+		}else if(string.equalsIgnoreCase("DELETE")) {
+
+			response = spec.when().delete(endpoint+id);
+		}
+
+	}
+
+	@Then("I verify {string} request response is {int}")
+	public void i_verify_request_response_is(String string, Integer int1) throws ParseException {
+
+		if(string.equalsIgnoreCase("GET")) {
+
+			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
+
+			
+			response.getBody();
+
+			JSONParser jo = new JSONParser();
+
+			Object parse = jo.parse(getResponseBody(response));
+
+			JSONObject ob = (JSONObject)parse;
+
+			Object listings = ob.get("listings");
+
+			JSONArray ob1 = (JSONArray)listings;
+
+			Object object = ob1.get(0);
+
+			JSONObject ob3 = (JSONObject)object;
+
+			Object id = ob3.get("id");
+
+			Object model = ob3.get("model");
+
+			//		   JSONObject ob2 = (JSONObject)object;
+			//		   
+			//		   Object object2 = ob2.get("href");
+			
+			System.out.println("GET response Code: "+getResponseCode(response));
+
+			Assert.assertTrue((id instanceof Long));
+			
+			Assert.assertTrue((model instanceof String));
+
+		}
+
+		else if(string.equalsIgnoreCase("POST")) {
+
+			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
+
+			JsonPath j = new  JsonPath(response.body().asString());
+
+			id = j.get("listing.id");
+			
+			
+			System.out.println("POST response Code: "+getResponseCode(response));
+
+
+		}else if(string.equalsIgnoreCase("PUT")) {
+
+			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
+
+			JsonPath j = new  JsonPath(response.body().asString());
+			
+			System.out.println("PUT response Code: "+getResponseCode(response));
+
+			
+
+		}else if(string.equalsIgnoreCase("DELETE")) {
+
+			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
+
+			System.out.println("DELETE response Code: "+getResponseCode(response));
+	
+		}
+
+
+	}
+
+	@Given("I add the {string} request body")
+	
+	public void i_add_the_request_body(String string) {
+
+		if(string.equalsIgnoreCase("POST")) {
+
+			spec = spec.body(postRequestBody());
+
+		}else if(string.equalsIgnoreCase("PUT")) {
+
+			spec = spec.body(putRequestbody());
+
+		}
+
+
+	}
+
+
+
+}

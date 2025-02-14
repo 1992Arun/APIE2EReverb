@@ -1,0 +1,394 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 840862000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-14T10:42:43.634Z",
+        "line": 9,
+        "name": "Testing the GET request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-get-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3132891100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I send the \"GET\" request with \"getRequest\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"getRequest\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65831300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"GET\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4535700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-14T10:42:47.696Z",
+        "line": 17,
+        "name": "Testing the POST request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-post-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 421383000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I add the \"POST\" request body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.i_add_the_request_body(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 977287100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I send the \"POST\" request with \"createListing\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"createListing\"",
+                  "offset": 31
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 675181100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I verify \"POST\" request response is 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 9
+                },
+                {
+                  "val": "201",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3112600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-14T10:42:49.776Z",
+        "line": 27,
+        "name": "Testing the PUT request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-put-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6196900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I add the \"PUT\" request body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 10
+                }
+              ],
+              "location": "StepDefinition.i_add_the_request_body(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 947213100,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "I send the \"PUT\" request with \"updateListing\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"updateListing\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2237700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "I verify \"PUT\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@put"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8752000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-14T10:42:50.735Z",
+        "line": 36,
+        "name": "Testing the DELETE request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-delete-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 801556900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I send the \"DELETE\" request with \"deleteDraft\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"deleteDraft\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1746400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I verify \"DELETE\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@delete"
+          }
+        ]
+      }
+    ],
+    "name": "Testing all API request methods of Reverb APIs",
+    "description": "",
+    "id": "testing-all-api-request-methods-of-reverb-apis",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/APIFeature.feature",
+    "tags": [
+      {
+        "name": "@E2E",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
