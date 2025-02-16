@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 840862000,
+              "duration": 806786200,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-14T10:42:43.634Z",
+        "start_timestamp": "2025-02-16T06:31:09.371Z",
         "line": 9,
         "name": "Testing the GET request method",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3132891100,
+              "duration": 3250463700,
               "status": "passed"
             },
             "line": 11,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 65831300,
+              "duration": 65955300,
               "status": "passed"
             },
             "line": 13,
@@ -95,7 +95,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4535700,
+              "duration": 4141000,
               "status": "passed"
             },
             "line": 6,
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-14T10:42:47.696Z",
+        "start_timestamp": "2025-02-16T06:31:13.509Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -118,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 421383000,
+              "duration": 70100,
               "status": "passed"
             },
             "line": 19,
@@ -136,7 +136,7 @@
           },
           {
             "result": {
-              "duration": 977287100,
+              "duration": 10252245400,
               "status": "passed"
             },
             "line": 21,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 675181100,
+              "duration": 745788000,
               "status": "passed"
             },
             "line": 23,
@@ -197,7 +197,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3112600,
+              "duration": 2811700,
               "status": "passed"
             },
             "line": 6,
@@ -210,7 +210,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-14T10:42:49.776Z",
+        "start_timestamp": "2025-02-16T06:31:24.513Z",
         "line": 27,
         "name": "Testing the PUT request method",
         "description": "",
@@ -220,7 +220,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6196900,
+              "duration": 6844800,
               "status": "passed"
             },
             "line": 29,
@@ -238,7 +238,7 @@
           },
           {
             "result": {
-              "duration": 947213100,
+              "duration": 1134521600,
               "status": "passed"
             },
             "line": 31,
@@ -260,7 +260,7 @@
           },
           {
             "result": {
-              "duration": 2237700,
+              "duration": 1360100,
               "status": "passed"
             },
             "line": 33,
@@ -299,7 +299,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8752000,
+              "duration": 3801500,
               "status": "passed"
             },
             "line": 6,
@@ -312,7 +312,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-14T10:42:50.735Z",
+        "start_timestamp": "2025-02-16T06:31:25.659Z",
         "line": 36,
         "name": "Testing the DELETE request method",
         "description": "",
@@ -322,7 +322,7 @@
         "steps": [
           {
             "result": {
-              "duration": 801556900,
+              "duration": 605791600,
               "status": "passed"
             },
             "line": 39,
@@ -344,7 +344,7 @@
           },
           {
             "result": {
-              "duration": 1746400,
+              "duration": 1196000,
               "status": "passed"
             },
             "line": 41,

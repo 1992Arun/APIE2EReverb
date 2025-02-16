@@ -63,7 +63,50 @@ public class Utility {
 
 
 
-	public static Parent postRequestBody()  {
+	public static Parent postRequestBody(String title, String description, String amount, String currency, String uuid, String price, String region )  {
+		
+		Parent p = new Parent();
+
+		Domestic d = new Domestic();
+
+		d.setPrice(price);
+		
+		d.setRegion(region);
+
+		Shipping s = new Shipping();
+
+		s.setDomestic(d);
+
+		Condition c = new Condition();
+
+		c.setUuid(uuid);
+
+		Price pr = new Price();
+
+		pr.setAmount(amount);
+
+		pr.setCurrency(currency);
+
+		p.setDescription(description);
+
+		p.setTitle(title);
+
+		p.setPrice(pr);
+
+		p.setShipping(s);
+
+		p.setCondition(c);
+
+//		ObjectMapper ob = new ObjectMapper();
+//
+//		String writer = ob.writeValueAsString(p);
+//
+//		System.out.println(writer);
+		return p;
+	
+	}
+		
+		public static Parent postRequestBody() {
 
 		Parent p = new Parent();
 

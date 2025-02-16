@@ -13,20 +13,28 @@ import io.restassured.specification.ResponseSpecification;
 
 public class Builder extends Utility {
 	
+	public static PrintStream p ;
+	
 	
 	public static RequestSpecification getRequestSpecBuilder(){
 		
-		PrintStream p = null;
+	
 		
-		try {
+		
+		if(p==null) {
 			
-			p = new PrintStream("log.txt");
 			
-		} catch (FileNotFoundException e) {
+			try {
+				p = new PrintStream("log.txt");
+			} catch (FileNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
-			e.printStackTrace();
+	
+			
 		}
-			
+		
 		RequestSpecBuilder spec = new RequestSpecBuilder();
 		
 		spec.setBaseUri(getProperty("baseURI"));
