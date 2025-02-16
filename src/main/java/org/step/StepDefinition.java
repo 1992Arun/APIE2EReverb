@@ -112,7 +112,7 @@ public class StepDefinition extends Builder {
 	}
 
 	@Then("I verify {string} request response is {int}")
-	public void i_verify_request_response_is(String string, Integer int1) throws ParseException {
+	public void i_verify_request_response_is(String string, int int1) throws ParseException {
 
 		if (string.equalsIgnoreCase("GET")) {
 
@@ -167,6 +167,11 @@ public class StepDefinition extends Builder {
 			JsonPath j = new JsonPath(response.body().asString());
 
 			System.out.println("PUT response Code: " + getResponseCode(response));
+			
+			Assert.assertEquals(int1, getResponseCode(response));
+			
+			
+		
 
 		} else if (string.equalsIgnoreCase("DELETE")) {
 

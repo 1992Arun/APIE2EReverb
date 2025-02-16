@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1006202300,
+              "duration": 783425800,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-16T07:57:12.206Z",
+        "start_timestamp": "2025-02-16T08:08:16.163Z",
         "line": 9,
         "name": "Testing the GET request method",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3130882200,
+              "duration": 3203554200,
               "status": "passed"
             },
             "line": 11,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 52978400,
+              "duration": 76813400,
               "status": "passed"
             },
             "line": 13,
@@ -72,7 +72,7 @@
                   "offset": 35
                 }
               ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
             },
             "keyword": "Then "
           }
@@ -95,7 +95,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4225400,
+              "duration": 4403800,
               "status": "passed"
             },
             "line": 6,
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-16T07:57:16.420Z",
+        "start_timestamp": "2025-02-16T08:08:20.247Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -118,25 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 65100,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I add the \"POST\" request body",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"POST\"",
-                  "offset": 10
-                }
-              ],
-              "location": "StepDefinition.i_add_the_request_body(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9611203000,
+              "duration": 10041086900,
               "status": "passed"
             },
             "line": 21,
@@ -158,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 21626100,
+              "duration": 45977900,
               "status": "passed"
             },
             "line": 23,
@@ -174,7 +156,7 @@
                   "offset": 36
                 }
               ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
             },
             "keyword": "Then "
           }
@@ -197,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2763700,
+              "duration": 9508900,
               "status": "passed"
             },
             "line": 6,
@@ -210,7 +192,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-16T07:57:26.059Z",
+        "start_timestamp": "2025-02-16T08:08:30.340Z",
         "line": 27,
         "name": "Testing the PUT request method",
         "description": "",
@@ -220,25 +202,7 @@
         "steps": [
           {
             "result": {
-              "duration": 63600,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I add the \"PUT\" request body",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PUT\"",
-                  "offset": 10
-                }
-              ],
-              "location": "StepDefinition.i_add_the_request_body(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6348859800,
+              "duration": 6928060900,
               "status": "passed"
             },
             "line": 31,
@@ -260,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 1625200,
+              "duration": 1397400,
               "status": "passed"
             },
             "line": 33,
@@ -276,7 +240,7 @@
                   "offset": 35
                 }
               ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
             },
             "keyword": "Then "
           }
@@ -299,7 +263,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5477000,
+              "duration": 5496800,
               "status": "passed"
             },
             "line": 6,
@@ -312,7 +276,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-16T07:57:32.413Z",
+        "start_timestamp": "2025-02-16T08:08:37.281Z",
         "line": 36,
         "name": "Testing the DELETE request method",
         "description": "",
@@ -322,7 +286,7 @@
         "steps": [
           {
             "result": {
-              "duration": 814207400,
+              "duration": 781309000,
               "status": "passed"
             },
             "line": 39,
@@ -344,7 +308,7 @@
           },
           {
             "result": {
-              "duration": 1086700,
+              "duration": 1046700,
               "status": "passed"
             },
             "line": 41,
@@ -360,7 +324,7 @@
                   "offset": 38
                 }
               ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
             },
             "keyword": "Then "
           }

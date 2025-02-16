@@ -16,7 +16,7 @@ Then I verify "GET" request response is 200
 @post
 Scenario: Testing the POST request method
 
-Given I add the "POST" request body
+
 
 When I send the "POST" request with "createListing" endpoint
 
@@ -26,7 +26,7 @@ Then I verify "POST" request response is 201
 @put
 Scenario: Testing the PUT request method
 
-Given I add the "PUT" request body
+
 
 When I send the "PUT" request with "updateListing" endpoint
 
