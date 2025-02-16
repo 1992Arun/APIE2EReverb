@@ -150,6 +150,38 @@ public class Utility {
 
 	}
 	
+		
+		public static PutParent putRequestbody(String  updatedtitle, String updateddescription, String updatedamount, String currency, String uuid){
+			
+			PutParent pput = new PutParent();
+			
+			PutPrice pr = new PutPrice();
+			
+			PutCondition c = new PutCondition();
+			
+			pr.setAmount(updatedamount);
+			
+			pr.setCurrency(currency);
+			
+			c.setUuid(uuid);
+			
+			pput.setCondition(c);
+			
+			pput.setPrice(pr);
+			
+			pput.setDescription(updateddescription);
+			
+			pput.setTitle(updatedtitle);
+			
+			return pput;
+			
+//			ObjectMapper ob = new ObjectMapper();
+	//
+//			String writer = ob.writeValueAsString(pput);
+	//
+//			System.out.println(writer);
+			
+		}
 	
 	
 	public static PutParent putRequestbody(){

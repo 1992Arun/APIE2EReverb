@@ -9,6 +9,8 @@ import org.utility.APIEndPoints;
 import org.utility.Builder;
 import org.utility.ExcelReader;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -35,7 +37,8 @@ public class StepDefinition extends Builder {
 	}
 
 	@When("I send the {string} request with {string} endpoint")
-	public void i_send_the_request_with_endpoint(String string, String string2) {
+	public void i_send_the_request_with_endpoint(String string, String string2)
+			throws ParseException, JsonProcessingException {
 
 		APIEndPoints valueOf = APIEndPoints.valueOf(string2);
 
@@ -49,7 +52,8 @@ public class StepDefinition extends Builder {
 
 			// for (int i = 0; i < reader.length; i++) {
 
-			reader = ExcelReader.reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx");
+			reader = ExcelReader.reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx",
+					string);
 
 			for (int i = 0; i < reader.length; i++) {
 
@@ -71,11 +75,34 @@ public class StepDefinition extends Builder {
 
 				response = spec.when().post(endpoint);
 
+				i_verify_request_response_is(string, getResponseCode(response));
+
 			}
 
 		} else if (string.equalsIgnoreCase("PUT")) {
 
-			response = spec.when().put(endpoint + id);
+			reader = ExcelReader.reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx",
+					string);
+
+			for (int i = 0; i < reader.length; i++) {
+
+				String updatedtitle = reader[i][0];
+
+				String updateddescription = reader[i][1];
+
+				String updatedamount = reader[i][2];
+
+				String currency = reader[i][3];
+
+				String uuid = reader[i][4];
+
+				spec = spec.body(putRequestbody(updatedtitle, updateddescription, updatedamount, currency, uuid));
+
+				response = spec.when().put(endpoint + id);
+
+				i_verify_request_response_is(string, getResponseCode(response));
+
+			}
 
 		} else if (string.equalsIgnoreCase("DELETE")) {
 
@@ -133,7 +160,6 @@ public class StepDefinition extends Builder {
 
 			System.out.println("POST response Code: " + getResponseCode(response));
 
-
 		} else if (string.equalsIgnoreCase("PUT")) {
 
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
@@ -155,40 +181,6 @@ public class StepDefinition extends Builder {
 	@Given("I add the {string} request body")
 
 	public void i_add_the_request_body(String string) {
-
-		if (string.equalsIgnoreCase("POST")) {
-
-			// reader = ExcelReader.reader(System.getProperty("user.dir") +
-			// "\\src\\test\\resources\\NewFile.xlsx");
-			//
-			// for (int i = 0; i < reader.length; i++) {
-			//
-			// String title = reader[i][0];
-			//
-			// String description = reader[i][1];
-			//
-			// String amount = reader[i][2];
-			//
-			// String currency = reader[i][3];
-			//
-			// String uuid = reader[i][4];
-			//
-			// String price = reader[i][5];
-			//
-			// String region = reader[i][6];
-			//
-			// spec = spec.body(postRequestBody(title, description, amount, currency, uuid,
-			// price, region));
-			//
-			// }
-
-		}
-
-		else if (string.equalsIgnoreCase("PUT")) {
-
-			spec = spec.body(putRequestbody());
-
-		}
 
 	}
 

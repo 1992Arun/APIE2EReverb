@@ -16,7 +16,7 @@ public class ExcelReader {
 	public static XSSFSheet sheet;
 	
 	
-	public static String[][] reader(String filepath)  {
+	public static String[][] reader(String filepath, String sheetName)  {
 		
 
 		
@@ -26,7 +26,7 @@ public class ExcelReader {
 			FileInputStream fi = new FileInputStream(filepath);
 			XSSFWorkbook wb = new XSSFWorkbook(fi);
 			
-			 sheet = wb.getSheet("Java");
+			 sheet = wb.getSheet(sheetName);
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -50,7 +50,10 @@ public class ExcelReader {
 				data[i-1][1] = cell(i,1);
 				data[i-1][2] = cell(i,2);
 				data[i-1][3] = cell(i,3);
-				data[i-1][4] = cell(i,4);
+				data[i-1][4] = cell(i,4);	
+				
+		       if(sheetName.equals("PUT")) continue;	
+		       
 				data[i-1][5] = cell(i,5);
 				data[i-1][6] = cell(i,6);
 	 
@@ -104,6 +107,30 @@ public class ExcelReader {
 	
 
 	}
+	
+//	
+//	public static void main(String[] args) {
+//		
+//		String[][] reader = reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx",
+//				"PUT");
+//		
+//		for(int i=0; i<reader.length;i++) {
+//			
+//			String updatedtitle = reader[i][0];
+//
+//			String updateddescription = reader[i][1];
+//
+//			String updatedamount = reader[i][2];
+//
+//			String currency = reader[i][3];
+//
+//			String uuid = reader[i][4];
+//			
+//			System.out.println(updatedtitle);
+//
+//		}
+//		
+//	}
 	
 	
 	

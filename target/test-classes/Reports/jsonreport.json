@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 806786200,
+              "duration": 793747700,
               "status": "passed"
             },
             "line": 6,
@@ -24,193 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-16T06:31:09.371Z",
-        "line": 9,
-        "name": "Testing the GET request method",
-        "description": "",
-        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-get-request-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 3250463700,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "I send the \"GET\" request with \"getRequest\" endpoint",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GET\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"getRequest\"",
-                  "offset": 30
-                }
-              ],
-              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 65955300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "I verify \"GET\" request response is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"GET\"",
-                  "offset": 9
-                },
-                {
-                  "val": "200",
-                  "offset": 35
-                }
-              ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@get"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4141000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I added baseuri and RequestSpec",
-            "match": {
-              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-02-16T06:31:13.509Z",
-        "line": 17,
-        "name": "Testing the POST request method",
-        "description": "",
-        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-post-request-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 70100,
-              "status": "passed"
-            },
-            "line": 19,
-            "name": "I add the \"POST\" request body",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"POST\"",
-                  "offset": 10
-                }
-              ],
-              "location": "StepDefinition.i_add_the_request_body(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 10252245400,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I send the \"POST\" request with \"createListing\" endpoint",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"POST\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"createListing\"",
-                  "offset": 31
-                }
-              ],
-              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 745788000,
-              "status": "passed"
-            },
-            "line": 23,
-            "name": "I verify \"POST\" request response is 201",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"POST\"",
-                  "offset": 9
-                },
-                {
-                  "val": "201",
-                  "offset": 36
-                }
-              ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@post"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 2811700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I added baseuri and RequestSpec",
-            "match": {
-              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-02-16T06:31:24.513Z",
+        "start_timestamp": "2025-02-16T07:55:29.663Z",
         "line": 27,
         "name": "Testing the PUT request method",
         "description": "",
@@ -220,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6844800,
+              "duration": 221200,
               "status": "passed"
             },
             "line": 29,
@@ -238,7 +52,7 @@
           },
           {
             "result": {
-              "duration": 1134521600,
+              "duration": 7748001000,
               "status": "passed"
             },
             "line": 31,
@@ -260,8 +74,9 @@
           },
           {
             "result": {
-              "duration": 1360100,
-              "status": "passed"
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c200\u003e but was \u003c404\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:93)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:171)\r\n\tat ✽.I verify \"PUT\" request response is 200(file:src/test/resources/APIFeature.feature:33)\r\n",
+              "duration": 34518700,
+              "status": "failed"
             },
             "line": 33,
             "name": "I verify \"PUT\" request response is 200",
@@ -287,90 +102,6 @@
           },
           {
             "name": "@put"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 3801500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I added baseuri and RequestSpec",
-            "match": {
-              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-02-16T06:31:25.659Z",
-        "line": 36,
-        "name": "Testing the DELETE request method",
-        "description": "",
-        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-delete-request-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 605791600,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "I send the \"DELETE\" request with \"deleteDraft\" endpoint",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"DELETE\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"deleteDraft\"",
-                  "offset": 33
-                }
-              ],
-              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1196000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "I verify \"DELETE\" request response is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"DELETE\"",
-                  "offset": 9
-                },
-                {
-                  "val": "200",
-                  "offset": 38
-                }
-              ],
-              "location": "StepDefinition.i_verify_request_response_is(String,Integer)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@delete"
           }
         ]
       }
