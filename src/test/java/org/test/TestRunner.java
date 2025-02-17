@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 
-@CucumberOptions(features="src/test/resources", glue="org.step", tags="@E2E", plugin="json:src\\test\\resources\\Reports\\jsonreport.json")
+@CucumberOptions(features="src/test/resources", glue="org.step",dryRun=false, tags="@E2E", plugin="json:src\\test\\resources\\Reports\\jsonreport.json")
 public class TestRunner {
 
 	

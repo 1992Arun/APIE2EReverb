@@ -66,9 +66,6 @@ public class ExcelReader {
 		}
 		
 		
-	
-	
-	
 	public static String cell(int row, int column) {
 		
 		String value;

@@ -1,5 +1,8 @@
 package org.step;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -25,7 +28,7 @@ public class StepDefinition extends Builder {
 
 	public static Response response;
 
-	public static int id;
+	public static List<Integer> id = new ArrayList();;
 
 	public static String[][] reader;
 
@@ -33,6 +36,8 @@ public class StepDefinition extends Builder {
 	public void i_added_baseuri_and_RequestSpec() {
 
 		spec = RestAssured.given().spec(getRequestSpecBuilder());
+		
+		
 
 	}
 
@@ -53,7 +58,7 @@ public class StepDefinition extends Builder {
 			// for (int i = 0; i < reader.length; i++) {
 
 			reader = ExcelReader.reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx",
-					string);
+					"POST");
 
 			for (int i = 0; i < reader.length; i++) {
 
@@ -82,7 +87,9 @@ public class StepDefinition extends Builder {
 		} else if (string.equalsIgnoreCase("PUT")) {
 
 			reader = ExcelReader.reader(System.getProperty("user.dir") + "\\src\\test\\resources\\NewFile.xlsx",
-					string);
+					"PUT");
+			
+			System.out.println(id);
 
 			for (int i = 0; i < reader.length; i++) {
 
@@ -98,15 +105,21 @@ public class StepDefinition extends Builder {
 
 				spec = spec.body(putRequestbody(updatedtitle, updateddescription, updatedamount, currency, uuid));
 
-				response = spec.when().put(endpoint + id);
+				response = spec.when().put(endpoint + id.get(i));
 
 				i_verify_request_response_is(string, getResponseCode(response));
 
 			}
 
 		} else if (string.equalsIgnoreCase("DELETE")) {
+			
+			for(int i=0;i<id.size()-1;i++) {
 
-			response = spec.when().delete(endpoint + id);
+			response = spec.when().delete(endpoint + id.get(i));
+			
+			i_verify_request_response_is(string, getResponseCode(response));
+			
+			}
 		}
 
 	}
@@ -155,10 +168,12 @@ public class StepDefinition extends Builder {
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
 
 			JsonPath j = new JsonPath(response.body().asString());
-
-			id = j.get("listing.id");
+			
+			id.add((Integer) j.get("listing.id"));
 
 			System.out.println("POST response Code: " + getResponseCode(response));
+			
+			Assert.assertEquals(int1, getResponseCode(response));
 
 		} else if (string.equalsIgnoreCase("PUT")) {
 
@@ -168,25 +183,29 @@ public class StepDefinition extends Builder {
 
 			System.out.println("PUT response Code: " + getResponseCode(response));
 			
-			Assert.assertEquals(int1, getResponseCode(response));
+			if(getResponseCode(response)!=200) {
+				
+				Assert.fail();
+				
+		         }else {
+		        	 
+		        	 Assert.assertEquals(int1, getResponseCode(response));
+		        	 
+		         }
 			
-			
-		
 
 		} else if (string.equalsIgnoreCase("DELETE")) {
 
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
 
 			System.out.println("DELETE response Code: " + getResponseCode(response));
+			
 
+			Assert.assertEquals(int1, getResponseCode(response));
 		}
 
 	}
 
-	@Given("I add the {string} request body")
 
-	public void i_add_the_request_body(String string) {
-
-	}
 
 }

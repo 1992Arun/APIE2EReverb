@@ -16,8 +16,6 @@ Then I verify "GET" request response is 200
 @post
 Scenario: Testing the POST request method
 
-
-
 When I send the "POST" request with "createListing" endpoint
 
 Then I verify "POST" request response is 201
@@ -26,15 +24,12 @@ Then I verify "POST" request response is 201
 @put
 Scenario: Testing the PUT request method
 
-
-
 When I send the "PUT" request with "updateListing" endpoint
 
 Then I verify "PUT" request response is 200
 
 @delete
 Scenario: Testing the DELETE request method
-
 
 When I send the "DELETE" request with "deleteDraft" endpoint
 
