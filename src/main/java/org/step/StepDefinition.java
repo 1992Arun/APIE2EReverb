@@ -18,6 +18,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.RestAssured;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -128,11 +129,12 @@ public class StepDefinition extends Builder {
 	public void i_verify_request_response_is(String string, int int1) throws ParseException {
 
 		if (string.equalsIgnoreCase("GET")) {
-
+			
+			
+			
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
-
-			response.getBody();
-
+			
+			
 			JSONParser jo = new JSONParser();
 
 			Object parse = jo.parse(getResponseBody(response));
@@ -166,7 +168,12 @@ public class StepDefinition extends Builder {
 		else if (string.equalsIgnoreCase("POST")) {
 
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
+			
+			response.then().body(JsonSchemaValidator.matchesJsonSchema(schema()));
+			
+			response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/Post.json"));
 
+			
 			JsonPath j = new JsonPath(response.body().asString());
 			
 			id.add((Integer) j.get("listing.id"));
@@ -179,6 +186,8 @@ public class StepDefinition extends Builder {
 
 			response = response.then().spec(getResponseSpecBuilder(int1)).extract().response();
 
+			response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/put.json"));
+	
 			JsonPath j = new JsonPath(response.body().asString());
 
 			System.out.println("PUT response Code: " + getResponseCode(response));

@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 659253000,
+              "duration": 758765100,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,91 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-17T11:49:43.109Z",
+        "start_timestamp": "2025-02-20T10:22:13.631Z",
+        "line": 9,
+        "name": "Testing the GET request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-get-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3197467400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I send the \"GET\" request with \"getRequest\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"getRequest\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67411200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"GET\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4688300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-20T10:22:17.671Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -34,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13305827800,
+              "duration": 10659186100,
               "status": "passed"
             },
             "line": 19,
@@ -56,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 16732000,
+              "duration": 37059600,
               "status": "passed"
             },
             "line": 21,
@@ -95,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4179300,
+              "duration": 2451500,
               "status": "passed"
             },
             "line": 6,
@@ -108,7 +192,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-17T11:49:57.091Z",
+        "start_timestamp": "2025-02-20T10:22:28.373Z",
         "line": 25,
         "name": "Testing the PUT request method",
         "description": "",
@@ -118,8 +202,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:188)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:110)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
-              "duration": 13987251600,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:197)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:111)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
+              "duration": 6372430800,
               "status": "failed"
             },
             "line": 27,
@@ -141,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 62900,
+              "duration": 72500,
               "status": "skipped"
             },
             "line": 29,
@@ -180,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9108500,
+              "duration": 5606600,
               "status": "passed"
             },
             "line": 6,
@@ -193,7 +277,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-17T11:50:11.097Z",
+        "start_timestamp": "2025-02-20T10:22:34.760Z",
         "line": 32,
         "name": "Testing the DELETE request method",
         "description": "",
@@ -203,7 +287,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11370055500,
+              "duration": 5293894400,
               "status": "passed"
             },
             "line": 34,
@@ -225,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 1043300,
+              "duration": 1076200,
               "status": "passed"
             },
             "line": 36,

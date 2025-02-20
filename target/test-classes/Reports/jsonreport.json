@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 659253000,
+              "duration": 774849000,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-17T11:49:43.109Z",
+        "start_timestamp": "2025-02-20T10:20:33.529Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13305827800,
+              "duration": 10955803000,
               "status": "passed"
             },
             "line": 19,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 16732000,
+              "duration": 36477600,
               "status": "passed"
             },
             "line": 21,
@@ -83,175 +83,6 @@
           },
           {
             "name": "@post"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4179300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I added baseuri and RequestSpec",
-            "match": {
-              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-02-17T11:49:57.091Z",
-        "line": 25,
-        "name": "Testing the PUT request method",
-        "description": "",
-        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-put-request-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:188)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:110)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
-              "duration": 13987251600,
-              "status": "failed"
-            },
-            "line": 27,
-            "name": "I send the \"PUT\" request with \"updateListing\" endpoint",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PUT\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"updateListing\"",
-                  "offset": 30
-                }
-              ],
-              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 62900,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "I verify \"PUT\" request response is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"PUT\"",
-                  "offset": 9
-                },
-                {
-                  "val": "200",
-                  "offset": 35
-                }
-              ],
-              "location": "StepDefinition.i_verify_request_response_is(String,int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@put"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 9108500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I added baseuri and RequestSpec",
-            "match": {
-              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2025-02-17T11:50:11.097Z",
-        "line": 32,
-        "name": "Testing the DELETE request method",
-        "description": "",
-        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-delete-request-method",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 11370055500,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I send the \"DELETE\" request with \"deleteDraft\" endpoint",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"DELETE\"",
-                  "offset": 11
-                },
-                {
-                  "val": "\"deleteDraft\"",
-                  "offset": 33
-                }
-              ],
-              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1043300,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I verify \"DELETE\" request response is 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"DELETE\"",
-                  "offset": 9
-                },
-                {
-                  "val": "200",
-                  "offset": 38
-                }
-              ],
-              "location": "StepDefinition.i_verify_request_response_is(String,int)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@E2E"
-          },
-          {
-            "name": "@delete"
           }
         ]
       }
