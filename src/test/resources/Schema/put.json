@@ -1,174 +1,144 @@
-{
-    "message": "Your draft listing has been saved. You can come back to finish it when you're ready.",
-    "listing": {
-        "id": 87363062,
-        "make": "Fender",
-        "model": "Stratocaster",
-        "finish": "",
-        "year": "",
-        "title": "Updated Fender Stratocaster Electric Guitar",
-        "created_at": "2025-02-20T10:04:55+00:00",
-        "shop_name": "Arun's Gear Emporium",
-        "description": "Now with upgraded pickups and refinished body.",
-        "condition": {
-            "uuid": "7c3f45de-2ae0-4c81-8400-fdb6b1d74890",
-            "display_name": "Brand New",
-            "description": "Brand New items are sold by an authorized dealer or original builder and include all original packaging."
-        },
-        "price": {
-            "amount": "1400.00",
-            "amount_cents": 140000,
-            "currency": "USD",
-            "symbol": "$",
-            "display": "$1,400"
-        },
-        "inventory": 0,
-        "has_inventory": false,
-        "offers_enabled": true,
-        "auction": false,
-        "categories": [],
-        "listing_currency": "USD",
-        "buyer_price": {
-            "amount": "1400.00",
-            "amount_cents": 140000,
-            "currency": "USD",
-            "symbol": "$",
-            "display": "$1,400",
-            "tax_included_hint": "",
-            "tax_included": false,
-            "tax_included_rate": 0
-        },
-        "seller_price": {
-            "amount": "1400.00",
-            "amount_cents": 140000,
-            "currency": "USD",
-            "symbol": "$",
-            "display": "$1,400"
-        },
-        "state": {
-            "slug": "draft",
-            "description": "Draft"
-        },
-        "wanted": false,
-        "accepted_payment_methods": [],
-        "location": {
-            "display_location": null
-        },
-        "draft": true,
-        "live": false,
-        "local_pickup_only": false,
-        "cloudinary_photos": [],
-        "shop": {
-            "feedback_count": 0,
-            "preferred_seller": false,
-            "rating_percentage": 0.0
-        },
-        "stats": {
-            "views": 0,
-            "watches": 0
-        },
-        "offer_count": 0,
-        "shipping_policy": "I will ship with tracking to the listed regions. To negotiate shipping rates to other locations, please send me a message.",
-        "payment_policy": "To negotiate price, shipping, or payment options, please send a message or make an offer.",
-        "sold_as_is": false,
-        "same_day_shipping_ineligible": false,
-        "return_policy": {},
-        "videos": [],
-        "is_my_listing": false,
-        "photos": [],
-        "shipping": {
-            "local": false,
-            "rates": [],
-            "initial_offer_rate": {
-                "region_code": null,
-                "rate": {
-                    "original": {
-                        "amount": "0.00",
-                        "amount_cents": 0,
-                        "currency": "USD",
-                        "symbol": "$",
-                        "display": "FREE"
-                    },
-                    "display": {
-                        "amount": "0.00",
-                        "amount_cents": 0,
-                        "currency": "USD",
-                        "symbol": "$",
-                        "display": "FREE"
-                    }
-                },
-                "carrier_calculated": false,
-                "regional": false,
-                "destination_postal_code_needed": false
-            },
-            "free_expedited_shipping": false
-        },
-        "seller": {
-            "paypal_email": null
-        },
-        "_links": {
-            "photo": {
-                "href": "https://static.reverb-assets.com/assets/products/blank_medium-8120dba69a21448fa293fc2df8f8ce0265daa804f2be9a7413732a58d1b833f8.jpg"
-            },
-            "self": {
-                "href": "https://api.reverb.com/api/listings/87363062-updated-fender-stratocaster-electric-guitar"
-            },
-            "update": {
-                "method": "PUT",
-                "href": "https://api.reverb.com/api/listings/87363062-updated-fender-stratocaster-electric-guitar"
-            },
-            "end": {
-                "method": "PUT",
-                "href": "https://api.reverb.com/api/my/listings/87363062-updated-fender-stratocaster-electric-guitar/state/end"
-            },
-            "want": {
-                "method": "PUT",
-                "href": "https://api.reverb.com/api/wants/87363062-updated-fender-stratocaster-electric-guitar"
-            },
-            "unwant": {
-                "method": "DELETE",
-                "href": "https://api.reverb.com/api/wants/87363062-updated-fender-stratocaster-electric-guitar"
-            },
-            "edit": {
-                "href": "https://api.reverb.com/api/listings/87363062-updated-fender-stratocaster-electric-guitar/edit"
-            },
-            "web": {
-                "href": "https://reverb.com/item/87363062-updated-fender-stratocaster-electric-guitar"
-            },
-            "make_offer": {
-                "method": "POST",
-                "href": "https://api.reverb.com/api/listings/87363062-updated-fender-stratocaster-electric-guitar/offer"
-            },
-            "cart": {
-                "href": "https://api.reverb.com/api/cart/87363062"
-            },
-            "buy": {
-                "href": "https://reverb.com/cart/add?cart_item%5Baction_source_attributes%5D%5Bdevice%5D=&cart_item%5Bproduct_id%5D=87363062"
-            },
-            "flag": {
-                "href": "https://api.reverb.com/api/listings/87363062-updated-fender-stratocaster-electric-guitar/flag"
-            },
-            "contact_seller": {
-                "web": {
-                    "href": "https://reverb.com/my/messages/new?item=87363062-updated-fender-stratocaster-electric-guitar&recipient_uuid=bfb063f4-d7b9-4869-8414-a9467499b47d"
-                }
-            },
-            "conversations": {
-                "href": "https://api.reverb.com/api/listings/87363062/conversations"
-            },
-            "shop": {
-                "href": "https://api.reverb.com/api/shops/aruns-gear-emporium-21",
-                "web": {
-                    "href": "https://reverb.com/shop/aruns-gear-emporium-21"
-                }
-            },
-            "sales": {
-                "href": "https://api.reverb.com/api/listings/87363062/sales"
-            }
-        }
-    },
-    "errors": {},
-    "warnings": [
-        "A valid UPC/EAN must be entered in the UPC field or the 'UPC does not apply' field must be marked true for a Brand New item"
-    ]
-}
+	{
+	  "$schema": "http://json-schema.org/draft-07/schema#",
+	  "type": "object",
+	  "properties": {
+	    "message": { "type": "string" },
+	    "error_type": { "type": ["string", "null"] },
+	    "errors": {
+	      "type": ["object", "null"],
+	      "additionalProperties": true
+	    },
+	    "listing": {
+	      "type": ["object", "null"],
+	      "properties": {
+	        "id": { "type": "integer" },
+	        "make": { "type": "string" },
+	        "model": { "type": "string" },
+	        "finish": { "type": "string" },
+	        "year": { "type": "string" },
+	        "title": { "type": "string" },
+	        "created_at": { "type": "string", "format": "date-time" },
+	        "shop_name": { "type": "string" },
+	        "description": { "type": "string" },
+	        "condition": {
+	          "type": "object",
+	          "properties": {
+	            "uuid": { "type": "string", "format": "uuid" },
+	            "display_name": { "type": "string" },
+	            "description": { "type": "string" }
+	          }
+	        },
+	        "price": {
+	          "type": "object",
+	          "properties": {
+	            "amount": { "type": "string" },
+	            "amount_cents": { "type": "integer" },
+	            "currency": { "type": "string" },
+	            "symbol": { "type": "string" },
+	            "display": { "type": "string" }
+	          }
+	        },
+	        "inventory": { "type": "integer" },
+	        "has_inventory": { "type": "boolean" },
+	        "offers_enabled": { "type": "boolean" },
+	        "auction": { "type": "boolean" },
+	        "categories": { "type": "array", "items": { "type": "string" } },
+	        "listing_currency": { "type": "string" },
+	        "buyer_price": {
+	          "$ref": "#/properties/listing/properties/price"
+	        },
+	        "seller_price": {
+	          "$ref": "#/properties/listing/properties/price"
+	        },
+	        "state": {
+	          "type": "object",
+	          "properties": {
+	            "slug": { "type": "string" },
+	            "description": { "type": "string" }
+	          }
+	        },
+	        "wanted": { "type": "boolean" },
+	        "accepted_payment_methods": { "type": "array", "items": { "type": "string" } },
+	        "location": {
+	          "type": "object",
+	          "properties": {
+	            "display_location": { "type": ["string", "null"] }
+	          }
+	        },
+	        "draft": { "type": "boolean" },
+	        "live": { "type": "boolean" },
+	        "local_pickup_only": { "type": "boolean" },
+	        "cloudinary_photos": { "type": "array", "items": { "type": "string" } },
+	        "shop": {
+	          "type": "object",
+	          "properties": {
+	            "feedback_count": { "type": "integer" },
+	            "preferred_seller": { "type": "boolean" },
+	            "rating_percentage": { "type": "number" }
+	          }
+	        },
+	        "stats": {
+	          "type": "object",
+	          "properties": {
+	            "views": { "type": "integer" },
+	            "watches": { "type": "integer" }
+	          }
+	        },
+	        "offer_count": { "type": "integer" },
+	        "shipping_policy": { "type": "string" },
+	        "payment_policy": { "type": "string" },
+	        "sold_as_is": { "type": "boolean" },
+	        "same_day_shipping_ineligible": { "type": "boolean" },
+	        "return_policy": { "type": "object" },
+	        "videos": { "type": "array", "items": { "type": "string" } },
+	        "is_my_listing": { "type": "boolean" },
+	        "photos": { "type": "array", "items": { "type": "string" } },
+	        "shipping": {
+	          "type": "object",
+	          "properties": {
+	            "local": { "type": "boolean" },
+	            "rates": { "type": "array", "items": { "type": "object" } },
+	            "initial_offer_rate": {
+	              "type": "object",
+	              "properties": {
+	                "region_code": { "type": ["string", "null"] },
+	                "rate": {
+	                  "type": "object",
+	                  "properties": {
+	                    "original": { "$ref": "#/properties/listing/properties/price" },
+	                    "display": { "$ref": "#/properties/listing/properties/price" }
+	                  }
+	                },
+	                "carrier_calculated": { "type": "boolean" },
+	                "regional": { "type": "boolean" },
+	                "destination_postal_code_needed": { "type": "boolean" }
+	              }
+	            },
+	            "free_expedited_shipping": { "type": "boolean" }
+	          }
+	        },
+	        "seller": {
+	          "type": "object",
+	          "properties": {
+	            "paypal_email": { "type": ["string", "null"] }
+	          }
+	        },
+	        "_links": {
+	          "type": "object",
+	          "properties": {
+	            "photo": { "type": "object", "properties": { "href": { "type": "string" } } },
+	            "self": { "type": "object", "properties": { "href": { "type": "string" } } },
+	            "update": { "type": "object", "properties": { "method": { "type": "string" }, "href": { "type": "string" } } },
+	            "end": { "type": "object", "properties": { "method": { "type": "string" }, "href": { "type": "string" } } },
+	            "want": { "type": "object", "properties": { "method": { "type": "string" }, "href": { "type": "string" } } },
+	            "unwant": { "type": "object", "properties": { "method": { "type": "string" }, "href": { "type": "string" } } },
+	            "edit": { "type": "object", "properties": { "href": { "type": "string" } } },
+	            "web": { "type": "object", "properties": { "href": { "type": "string" } } }
+	          }
+	        }
+	      }
+	    },
+	    "warnings": { "type": ["array", "null"], "items": { "type": "string" } }
+	  },
+	  "required": ["message"]
+	}

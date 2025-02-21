@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 774849000,
+              "duration": 863819800,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,91 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-20T10:20:33.529Z",
+        "start_timestamp": "2025-02-21T09:25:54.576Z",
+        "line": 9,
+        "name": "Testing the GET request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-get-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2994019800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I send the \"GET\" request with \"getRequest\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"getRequest\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71880700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify \"GET\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@get"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7577900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T09:25:58.522Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -34,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10955803000,
+              "duration": 11268145900,
               "status": "passed"
             },
             "line": 19,
@@ -56,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 36477600,
+              "duration": 38438600,
               "status": "passed"
             },
             "line": 21,
@@ -83,6 +167,175 @@
           },
           {
             "name": "@post"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4428100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T09:26:09.836Z",
+        "line": 25,
+        "name": "Testing the PUT request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-put-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nResponse body doesn\u0027t match expectation.\nExpected: The content to match the given JSON schema.\nerror: object has missing required properties ([\"errors\",\"listing\",\"warnings\"])\n    level: \"error\"\n    schema: {\"loadingURI\":\"file:/C:/Users/Arun/eclipse-workspace/APIE2EReverb/target/test-classes/schema/put.json#\",\"pointer\":\"\"}\n    instance: {\"pointer\":\"\"}\n    domain: \"validation\"\n    keyword: \"required\"\n    required: [\"errors\",\"listing\",\"message\",\"warnings\"]\n    missing: [\"errors\",\"listing\",\"warnings\"]\n\n  Actual: {\"message\":\"price[currency] does not have a valid value\",\"error_type\":null}\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:499)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:684)\r\n\tat sun.reflect.GeneratedMethodAccessor71.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:99)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)\r\n\tat java.lang.reflect.Method.invoke(Unknown Source)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:293)\r\n\tat io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:188)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:111)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
+              "duration": 5713743200,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "I send the \"PUT\" request with \"updateListing\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"updateListing\"",
+                  "offset": 30
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19900,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "I verify \"PUT\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"PUT\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@put"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3864400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I added baseuri and RequestSpec",
+            "match": {
+              "location": "StepDefinition.i_added_baseuri_and_RequestSpec()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2025-02-21T09:26:15.559Z",
+        "line": 32,
+        "name": "Testing the DELETE request method",
+        "description": "",
+        "id": "testing-all-api-request-methods-of-reverb-apis;testing-the-delete-request-method",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6685371700,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I send the \"DELETE\" request with \"deleteDraft\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"deleteDraft\"",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinition.i_send_the_request_with_endpoint(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 386400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I verify \"DELETE\" request response is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 9
+                },
+                {
+                  "val": "200",
+                  "offset": 38
+                }
+              ],
+              "location": "StepDefinition.i_verify_request_response_is(String,int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@E2E"
+          },
+          {
+            "name": "@delete"
           }
         ]
       }

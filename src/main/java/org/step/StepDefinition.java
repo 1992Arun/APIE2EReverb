@@ -173,7 +173,6 @@ public class StepDefinition extends Builder {
 			
 			response.then().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("schema/Post.json"));
 
-			
 			JsonPath j = new JsonPath(response.body().asString());
 			
 			id.add((Integer) j.get("listing.id"));

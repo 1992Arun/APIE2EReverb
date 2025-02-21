@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 758765100,
+              "duration": 847453600,
               "status": "passed"
             },
             "line": 6,
@@ -24,7 +24,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-20T10:22:13.631Z",
+        "start_timestamp": "2025-02-21T09:45:30.611Z",
         "line": 9,
         "name": "Testing the GET request method",
         "description": "",
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3197467400,
+              "duration": 2605281900,
               "status": "passed"
             },
             "line": 11,
@@ -56,7 +56,7 @@
           },
           {
             "result": {
-              "duration": 67411200,
+              "duration": 71880800,
               "status": "passed"
             },
             "line": 13,
@@ -95,7 +95,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4688300,
+              "duration": 5740800,
               "status": "passed"
             },
             "line": 6,
@@ -108,7 +108,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-20T10:22:17.671Z",
+        "start_timestamp": "2025-02-21T09:45:34.154Z",
         "line": 17,
         "name": "Testing the POST request method",
         "description": "",
@@ -118,7 +118,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10659186100,
+              "duration": 7382645500,
               "status": "passed"
             },
             "line": 19,
@@ -140,7 +140,7 @@
           },
           {
             "result": {
-              "duration": 37059600,
+              "duration": 37230300,
               "status": "passed"
             },
             "line": 21,
@@ -179,7 +179,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2451500,
+              "duration": 4108800,
               "status": "passed"
             },
             "line": 6,
@@ -192,7 +192,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-20T10:22:28.373Z",
+        "start_timestamp": "2025-02-21T09:45:41.581Z",
         "line": 25,
         "name": "Testing the PUT request method",
         "description": "",
@@ -202,8 +202,8 @@
         "steps": [
           {
             "result": {
-              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:197)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:111)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
-              "duration": 6372430800,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.fail(Assert.java:95)\r\n\tat org.step.StepDefinition.i_verify_request_response_is(StepDefinition.java:196)\r\n\tat org.step.StepDefinition.i_send_the_request_with_endpoint(StepDefinition.java:111)\r\n\tat ✽.I send the \"PUT\" request with \"updateListing\" endpoint(file:src/test/resources/APIFeature.feature:27)\r\n",
+              "duration": 4423439200,
               "status": "failed"
             },
             "line": 27,
@@ -225,7 +225,7 @@
           },
           {
             "result": {
-              "duration": 72500,
+              "duration": 21600,
               "status": "skipped"
             },
             "line": 29,
@@ -264,7 +264,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5606600,
+              "duration": 3219800,
               "status": "passed"
             },
             "line": 6,
@@ -277,7 +277,7 @@
         ]
       },
       {
-        "start_timestamp": "2025-02-20T10:22:34.760Z",
+        "start_timestamp": "2025-02-21T09:45:46.012Z",
         "line": 32,
         "name": "Testing the DELETE request method",
         "description": "",
@@ -287,7 +287,7 @@
         "steps": [
           {
             "result": {
-              "duration": 5293894400,
+              "duration": 4609112400,
               "status": "passed"
             },
             "line": 34,
@@ -309,7 +309,7 @@
           },
           {
             "result": {
-              "duration": 1076200,
+              "duration": 243200,
               "status": "passed"
             },
             "line": 36,
